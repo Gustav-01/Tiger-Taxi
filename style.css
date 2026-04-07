@@ -88,6 +88,12 @@ body {
 }
 
 .bookingHeading {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+    column-gap: 30px;
+    margin-left: 10px;
 }
 
 .booking h2 {
@@ -105,7 +111,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
+    line-height: normal;
 }
 
 form {
