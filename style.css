@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Exa:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF;
+    margin-top: 20px;
+    font-family: Inter;
+}
+
+.navigation {
+    display: flex;
+    width: 1895px;
+    height: 103px;
+    padding: 0 45px;
+    align-items: center;
+    gap: 170px;
+    border-radius: 80px;
+    background: #F5F5F5;
+}
+
+.navigation div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.navigation img {
+    width: 84.988px;
+    height: 84.038px;
+    aspect-ratio: 84.99/84.04;
+}
+
+.navigation div h1 {
+    all: unset;
+    color: #000;
+    font-family: "Lexend Exa";
+    font-size: 55.191px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: -0.607px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.navigation li {
+    display: flex;
+    width: 300px;
+    height: 79px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: none;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: auto;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.booking {
+    margin-left: 38px;
+}
+
+.bookingHeading {
+}
+
+.booking h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.booking span {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+form {
+    display: flex;
+    width: 525px;
+    height: 878px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 29px;
+    border-radius: 10px;
+}
+
+form input,
+select {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 2px solid #D0D0D0;
+    color: rgb(215, 215, 215);
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: rgb(215, 215, 215);
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url('assets/arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+    background-size: 30px;
+}
+
+.mapArea {
+    border: 1px solid black;
+}
+
+.extraAlternatives {}
