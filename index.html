@@ -21,7 +21,7 @@
             <li><a href="">Pågående turer</a></li>
             <li><a href="">Notiser</a></li>
             <li><a href="">Min profil</a></li>
-        </ul>
+        </ul>   
     </nav>
 
     <main>
@@ -43,29 +43,43 @@
                     <option value="4">4</option>
                 </select>
                 <div class="extraAlternatives">
-                    <input type="checkbox" name="defaultSize" id="defaultSize">
-                    <label for="defaultSize">Ordinarie</label>
-                    <input type="checkbox" name="xlSize" id="xlSize">
-                    <label for="xlSize">XL</label>
-                    <input type="checkbox" name="petsOk" id="petsOk">
-                    <label for="petsOk">Husdjur</label>
-                    <input type="checkbox" name="luxury" id="luxury">
-                    <label for="luxury">Lyx</label>
-                    <input type="checkbox" name="wheelchair" id="wheelchair">
-                    <label for="wheelchair">Rullstolsanpassad</label>
-                    <input type="checkbox" name="childSeat" id="childSeat">
-                    <label for="childSeat">Barnstol</label>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="defaultSize" id="defaultSize">
+                        <label for="defaultSize">Ordinarie</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="xlSize" id="xlSize">
+                        <label for="xlSize">XL</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="petsOk" id="petsOk">
+                        <label for="petsOk">Husdjur</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="luxury" id="luxury">
+                        <label for="luxury">Lyx</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="wheelchair" id="wheelchair">
+                        <label for="wheelchair">Rullstolsanpassad</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="childSeat" id="childSeat">
+                        <label for="childSeat">Barnstol</label>
+                    </div>
                 </div>
                 <textarea name="otherInfo" id="otherInfo" placeholder="Övrig information" maxlength="200"></textarea>
-                <input type="submit" value="Visa förare">
+                <input type="submit" value="Visa förare" id="submit">
             </form>
         </section>
         <section class="mapArea">
-            <div>
                 <img src="assets/map.png" alt="Karta över bilar">
-            </div>
+                <button><img src="assets/plus.png" alt="Zoom in"></button>
+                <div class="drivers">
+                        HEJHEJ
+                </div>
         </section>
     </main>
 </body>
 
-</html>
+</html> 
