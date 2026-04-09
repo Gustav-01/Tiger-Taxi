@@ -261,14 +261,68 @@ select {
     box-shadow: 0 -17px 26px rgba(0, 0, 0, 0.25)
 }
 
-.mapArea button {
+
+#plus {
     position: absolute;
     z-index: 10;
-    width: 60px;
-    height: 60px;
+    width: 59px;
+    height: 59px;
     border-radius: 5.59px;
     border: 1px solid #000;
     background: #FFF;
-    right: 20px;
-    top: 756px;
+    right: 2%;
+
+    /*Default 83%. Move to 33% (Start pos  - .drivers.height)*/
+    top: 83%;
+
+    img {
+        position: relative;
+        width: 37.267px;
+        height: 37.267px;
+    }
+}
+
+#minus {
+    position: absolute;
+    z-index: 10;
+    width: 59px;
+    height: 59px;
+    border-radius: 5.59px;
+    border: 1px solid #000;
+    background: #FFF;
+    right: 2%;
+
+    /* Default: 92%. Move to 42% (Start pos  - .drivers.height)*/
+    top: 92%;
+
+    img {
+        position: relative;
+        width: 150%;
+        height: 70%;
+        object-fit: fill;
+        margin-left: -25%;
+    }
+}
+
+#filter {
+    position: absolute;
+    z-index: 10;
+    width: 59px;
+    height: 59px;
+    border-radius: 5.59px;
+    border: 1px solid #000;
+    background: #FFF;
+    left: 2%;
+    bottom: 52%;
+
+    /*Change when displaying search result*/
+    visibility: hidden;
+
+    img {
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 46px;
+        height: 46px;
+    }
 }
