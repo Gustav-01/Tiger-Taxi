@@ -257,7 +257,7 @@ select {
     bottom: -3px;
     height: 50%;
     border-radius: 20px 20px 0 0;
-    /* background-color: #fff; */
+    background-color: #fff;
     box-shadow: 0 -17px 26px rgba(0, 0, 0, 0.25)
 }
 
@@ -325,4 +325,58 @@ select {
         width: 46px;
         height: 46px;
     }
+}
+
+.resultTable {
+    table-layout: fixed;
+    margin: 2%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 95%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    td {
+        text-overflow: ellipsis;
+        padding: 1em;
+
+        font-size: 24px;
+    }
+
+    thead tr th {
+        font-size: 14px;
+        vertical-align: top;
+        padding: 0.4em;
+        background-color: aqua;
+    }
+
+
+    tr :nth-child(2),
+    tr :nth-child(3),
+    tr :nth-child(4) {
+        text-align: left;
+        width: 25%;
+    }
+
+    tr :nth-child(5) {
+        text-align: left;
+        width: 10%;
+    }
+
+
+    tr :nth-child(1) {
+        width: 5%;
+
+        text-align: left;
+
+        img {
+            width: 40px;
+            height: 40px;
+            vertical-align: top;
+            object-fit: fill;
+            padding: 0.5em;
+        }
+    }
+
 }
