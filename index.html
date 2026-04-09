@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Taxi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <div>
+            <img src="assets/tigerhead.png" alt="Tiger taxi logo">
+            <h1>TAXI</h1>
+        </div>
+        <ul>
+            <li><a href="" id="first">Ny bokning</a></li>
+            <li><a href="">Pågående turer</a></li>
+            <li><a href="">Notiser</a></li>
+            <li><a href="">Min profil</a></li>
+        </ul>   
+    </nav>
+
+    <main>
+        <section class="booking">
+            <div class="bookingHeading">
+                <h2>Ny Bokning -</h2>
+                <span>ID: xxx.xx.xxx</span>
+            </div>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Namn på kund" aria-label="Namn">
+                <input type="text" name="from" id="from" placeholder="Avreseplats" aria-label="Avreseplats">
+                <input type="text" name="destination" id="destination" placeholder="Destination"
+                    aria-label="Destination">
+                <select id="passengers" aria-label="Antal passagerare">
+                    <option value="" selected>Antal passagerare</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <div class="extraAlternatives">
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="defaultSize" id="defaultSize">
+                        <label for="defaultSize">Ordinarie</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="xlSize" id="xlSize">
+                        <label for="xlSize">XL</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="petsOk" id="petsOk">
+                        <label for="petsOk">Husdjur</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="luxury" id="luxury">
+                        <label for="luxury">Lyx</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="wheelchair" id="wheelchair">
+                        <label for="wheelchair">Rullstolsanpassad</label>
+                    </div>
+                    <div class="alternativeSet">
+                        <input type="checkbox" name="childSeat" id="childSeat">
+                        <label for="childSeat">Barnstol</label>
+                    </div>
+                </div>
+                <textarea name="otherInfo" id="otherInfo" placeholder="Övrig information" maxlength="200"></textarea>
+                <input type="submit" value="Visa förare" id="submit">
+            </form>
+        </section>
+        <section class="mapArea">
+                <img src="assets/map.png" alt="Karta över bilar">
+                <button><img src="assets/plus.png" alt="Zoom in"></button>
+                <div class="drivers">
+                        HEJHEJ
+                </div>
+        </section>
+    </main>
+</body>
+
+</html> 
