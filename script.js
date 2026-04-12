@@ -18,12 +18,14 @@ function loadResults(e) {
     const resultBox = document.getElementsByClassName('drivers')[0];
     resultBox.style.display = 'block';
 
+    document.querySelectorAll('.taxi').forEach( taxi => {taxi.style.display = 'block'});
+
     const plusBtn = document.getElementById('plus');
     const minusBtn = document.getElementById('minus');
     const filterBtn = document.getElementById('filter');
 
-    plusBtn.style.top = '33%';
-    minusBtn.style.top = '42%';
+    plusBtn.style.top = '27%';
+    minusBtn.style.top = '36%';
     filterBtn.style.display = 'block';
 }
 
