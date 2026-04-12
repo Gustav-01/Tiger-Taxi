@@ -18,7 +18,7 @@ function loadResults(e) {
     const resultBox = document.getElementsByClassName('drivers')[0];
     resultBox.style.display = 'block';
 
-    document.querySelectorAll('.taxi').forEach( taxi => {taxi.style.display = 'block'});
+    document.querySelectorAll('.taxi').forEach(taxi => { taxi.style.display = 'block' });
 
     const plusBtn = document.getElementById('plus');
     const minusBtn = document.getElementById('minus');
@@ -32,6 +32,8 @@ function loadResults(e) {
 function cancelBooking(e) {
     const submitBtn = document.getElementById('submit');
     submitBtn.disabled = false;
+
+    document.querySelectorAll('.taxi').forEach(taxi => { taxi.style.display = 'none' });
 
     const resultBox = document.getElementsByClassName('drivers')[0];
     resultBox.style.display = 'none';

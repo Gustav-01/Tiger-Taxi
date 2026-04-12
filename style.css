@@ -326,7 +326,6 @@ select {
     background: #FFF;
     right: 2%;
 
-    /*Default 83%. Move to 33% (Start pos  - .drivers.height)*/
     top: 83%;
 
     img {
@@ -346,7 +345,6 @@ select {
     background: #FFF;
     right: 2%;
 
-    /* Default: 92%. Move to 42% (Start pos  - .drivers.height)*/
     top: 92%;
 
     img {
