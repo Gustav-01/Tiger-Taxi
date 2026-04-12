@@ -29,7 +29,31 @@ function cancelBooking(e) {
 }
 
 function confirmBooking(e) {
-    const dialog = document.createElement('dialog');
 
-    //Todo fill out dialog
+    console.log('Popup confirmation');
+    
+    const dialog = document.createElement('dialog');
+    dialog.closedBy = 'any';
+    dialog.className = 'bookingConfirmation';
+
+    const img = document.createElement('img');
+    img.src = 'assets/checkmark.png';
+    img.alt = 'Grön checkbock';
+    dialog.appendChild(img);
+    
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Bokning bekräftad'
+    dialog.appendChild(h2);
+    
+    const p = document.createElement('p');
+    p.textContent = 'Information om bokningen';
+    dialog.appendChild(p);
+    
+    const doneBtn = document.createElement('button');
+    doneBtn.textContent = 'Klar';
+    dialog.appendChild(doneBtn);
+    
+    document.getElementsByTagName('main')[0].append(dialog);
+
+    dialog.showModal();
 }
