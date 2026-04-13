@@ -21,7 +21,7 @@
             <li><a href="">Pågående turer</a></li>
             <li><a href="">Notiser</a></li>
             <li><a href="">Min profil</a></li>
-        </ul>   
+        </ul>
     </nav>
 
     <main>
@@ -73,77 +73,81 @@
             </form>
         </section>
         <section class="mapArea">
-                <img src="assets/map.png" alt="Karta över bilar" class="map">
-                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
-                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
-                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
-                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
-                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
-                <div class="mapButtons">
-                    <button id="plus"><img src="assets/plus.png" alt="Zooma in"></button>
-                    <button id="minus"><img src="assets/minus.png" alt="Zooma ut"></button>
-                    <button id="filter"><img src="assets/sliderfilter.png" alt="Filtrera resultat"></button>
-                </div>
-                <div class="drivers">
-                    <table class="resultTable">
-                        <thead>
-                            <tr>
-                                <th>Status</th><th>Förare</th><th>Biltyp</th><th>Var</th><th>Tid</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- DELETE BELOW MOCK DATA -->
-                             <tr>
-                                <td><img src="assets/Smile.svg" alt=""></td>
-                                <td>A. Andersson</td>
-                                <td>Ordinarie</td>
-                                <td>Hisingen</td>
-                                <td>20min</td>
-                             </tr>
-                             <tr>
-                                <td><img src="assets/Meh.svg" alt=""></td>
-                                <td>B. Bengtsson</td>
-                                <td>Lyx</td>
-                                <td>Majorna</td>
-                                <td>30min</td>
-                             </tr>
-                             <tr>
-                                <td><img src="assets/Frown.svg" alt=""></td>
-                                <td>B. Bengtsson</td>
-                                <td>Lyx</td>
-                                <td>Majorna</td>
-                                <td>1h 30min</td>
-                             </tr>
-                             <tr>
-                                <td><img src="assets/Smile.svg" alt=""></td>
-                                <td>B. Bengtsson</td>
-                                <td>Lyx</td>
-                                <td>Majorna</td>
-                                <td>30min</td>
-                             </tr>
-                             <tr>
-                                <td><img src="assets/Meh.svg" alt=""></td>
-                                <td>B. Bengtsson</td>
-                                <td>Lyx</td>
-                                <td>Majorna</td>
-                                <td>30min</td>
-                             </tr>
-                             <tr>
-                                <td><img src="assets/Meh.svg" alt=""></td>
-                                <td>B. Bengtsson</td>
-                                <td>Lyx</td>
-                                <td>Majorna</td>
-                                <td>30min</td>
-                             </tr>
-                        </tbody>
-                    </table>
-                    <div class="bookingButtons">
-                        <button id="cancel">Avbryt bokning</button>
-                        <button id="confirm">Matcha förare</button>
-                    </div>
-                </div>
+            <img src="assets/map.png" alt="Karta över bilar" class="map" id="map">
+            <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
+            <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
+            <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
+            <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
+            <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
+            <div class="mapButtons">
+                <button id="plus"><img src="assets/plus.png" alt="Zooma in"></button>
+                <button id="minus"><img src="assets/minus.png" alt="Zooma ut"></button>
+                <button id="filter"><img src="assets/sliderfilter.png" alt="Filtrera resultat"></button>
+            </div>
+            <div class="drivers">
+                <table class="resultTable">
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Förare</th>
+                            <th>Biltyp</th>
+                            <th>Var</th>
+                            <th>Tid</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- DELETE BELOW MOCK DATA -->
+                        <tr>
+                            <td><img src="assets/Smile.svg" alt=""></td>
+                            <td>A. Andersson</td>
+                            <td>Ordinarie</td>
+                            <td>Hisingen</td>
+                            <td>20min</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Meh.svg" alt=""></td>
+                            <td>B. Bengtsson</td>
+                            <td>Lyx</td>
+                            <td>Majorna</td>
+                            <td>30min</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Frown.svg" alt=""></td>
+                            <td>B. Bengtsson</td>
+                            <td>Lyx</td>
+                            <td>Majorna</td>
+                            <td>1h 30min</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Smile.svg" alt=""></td>
+                            <td>B. Bengtsson</td>
+                            <td>Lyx</td>
+                            <td>Majorna</td>
+                            <td>30min</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Meh.svg" alt=""></td>
+                            <td>B. Bengtsson</td>
+                            <td>Lyx</td>
+                            <td>Majorna</td>
+                            <td>30min</td>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/Meh.svg" alt=""></td>
+                            <td>B. Bengtsson</td>
+                            <td>Lyx</td>
+                            <td>Majorna</td>
+                            <td>30min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bookingButtons" id="bookingButtons">
+                <button id="cancel">Avbryt bokning</button>
+                <button id="confirm">Matcha förare</button>
+            </div>
         </section>
     </main>
 </body>
 
-</html> 
+</html>
