@@ -244,6 +244,10 @@ select {
     color: rgba(0, 0, 0, 0.37);
 }
 
+#submit:hover {
+    cursor: pointer;
+}
+
 .mapArea {
     margin-left: 10px;
     max-height: 1020px;
@@ -444,6 +448,7 @@ select {
     tbody tr:hover {
         border: 3px solid #D9D9D9;
         border-radius: 20px;
+        cursor: pointer;
         /*Why??*/
     }
 
