@@ -486,7 +486,46 @@ select {
     border: none;
 }
 
+.bookingConfirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.1);
 
+    img {
+        width: 5.5em;
+        height: 5.5em;
+        margin-top: 2.5em;
+    }
 
+    h2 {
+        font-family: Inter;
+        font-weight: 500;
+    }
 
-.bookingConfirmation {}
+    div {
+        width: 90%;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    button {
+        background: #4DBC3A;
+        justify-content: center;
+        border-radius: 7px;
+        padding: 0.3em 2em;
+        margin-top: 10px;
+        color: white;
+        border: none;
+    }
+}
+
+.bookingConfirmation::backdrop {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+}
