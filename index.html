@@ -30,12 +30,12 @@
                 <h2>Ny Bokning -</h2>
                 <span>ID: xxx.xx.xxx</span>
             </div>
-            <form>
-                <input type="text" name="name" id="name" placeholder="Namn på kund" aria-label="Namn">
-                <input type="text" name="from" id="from" placeholder="Avreseplats" aria-label="Avreseplats">
+            <form id="bookingForm">
+                <input type="text" name="name" id="name" placeholder="Namn på kund" aria-label="Namn" required>
+                <input type="text" name="from" id="from" placeholder="Avreseplats" aria-label="Avreseplats" required>
                 <input type="text" name="destination" id="destination" placeholder="Destination"
-                    aria-label="Destination">
-                <select id="passengers" aria-label="Antal passagerare">
+                    aria-label="Destination" required>
+                <select id="passengers" aria-label="Antal passagerare" required>
                     <option value="" selected>Antal passagerare</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -73,7 +73,12 @@
             </form>
         </section>
         <section class="mapArea">
-                <img src="assets/map.png" alt="Karta över bilar">
+                <img src="assets/map.png" alt="Karta över bilar" class="map">
+                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
+                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
+                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
+                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
+                <img src="assets/taxiLeft.png" alt="taxi" class="taxi">
                 <div class="mapButtons">
                     <button id="plus"><img src="assets/plus.png" alt="Zooma in"></button>
                     <button id="minus"><img src="assets/minus.png" alt="Zooma ut"></button>
@@ -103,14 +108,14 @@
                                 <td>30min</td>
                              </tr>
                              <tr>
-                                <td><img src="assets/Meh.svg" alt=""></td>
+                                <td><img src="assets/Frown.svg" alt=""></td>
                                 <td>B. Bengtsson</td>
                                 <td>Lyx</td>
                                 <td>Majorna</td>
-                                <td>30min</td>
+                                <td>1h 30min</td>
                              </tr>
                              <tr>
-                                <td><img src="assets/Meh.svg" alt=""></td>
+                                <td><img src="assets/Smile.svg" alt=""></td>
                                 <td>B. Bengtsson</td>
                                 <td>Lyx</td>
                                 <td>Majorna</td>
@@ -132,6 +137,10 @@
                              </tr>
                         </tbody>
                     </table>
+                    <div class="bookingButtons">
+                        <button id="cancel">Avbryt bokning</button>
+                        <button id="confirm">Matcha förare</button>
+                    </div>
                 </div>
         </section>
     </main>

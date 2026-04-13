@@ -1,25 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Exa:wght@100..900&display=swap');
 
+:root {
+    --greenButtonColor: #4DBC3A;
+}
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 
 body {
     background: #FFF;
-    margin-top: 20px;
+    margin: 0;
+    margin-top: 10px;
     font-family: Inter;
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
 .navigation {
     display: flex;
-    width: 1895px;
-    height: 103px;
-    padding: 0 45px;
+    width: 100%;
+    height: 73px;
+    padding: 0 30px;
     align-items: center;
-    gap: 170px;
     border-radius: 80px;
     background: #F5F5F5;
 }
@@ -31,18 +38,17 @@ body {
 }
 
 .navigation img {
-    width: 84.988px;
-    height: 84.038px;
-    aspect-ratio: 84.99/84.04;
+    width: 50px;
+    height: 50px;
 }
 
 .navigation div h1 {
     all: unset;
     color: #000;
     font-family: "Lexend Exa";
-    font-size: 55.191px;
+    font-size: 25px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 150%;
     letter-spacing: -0.607px;
 }
@@ -50,24 +56,22 @@ body {
 .navigation ul {
     display: flex;
     align-items: center;
-    gap: 50px;
     list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 120px
 }
 
 .navigation li {
     display: flex;
-    width: 300px;
-    height: 79px;
-    padding: 10px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 10px;
 
     a {
         text-decoration: none;
         color: #000;
-        font-size: 32px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -87,25 +91,25 @@ body {
 main {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .booking {
-    margin-left: 28px;
+    /* margin-left: 10px; */
 }
 
 .bookingHeading {
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
-    margin-left: 15px;
-    height: 70px;
+    column-gap: 10px;
+    margin-left: 20px;
+    height: 40px;
 }
 
 .booking h2 {
     color: #000;
     font-family: Inter;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -115,36 +119,33 @@ main {
 .booking span {
     color: #000;
     font-family: Inter;
-    font-size: 14px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
 form {
     display: flex;
-    width: 525px;
-    height: 878px;
-    padding: 0 15px;
+    width: 380px;
+    padding: 0 20px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 26px;
-    border-radius: 10px;
-    margin-top: 0;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 form input,
 select {
     display: flex;
-    padding: 15px;
+    padding: 11px;
     align-items: center;
-    gap: 10px;
     align-self: stretch;
-    border-radius: 20px;
+    border-radius: 13px;
     border: 2px solid #D0D0D0;
     color: rgb(215, 215, 215);
-    font-size: 20px;
+    font-size: 13px;
 }
 
 input::placeholder {
@@ -158,14 +159,15 @@ select {
 
     background-image: url('assets/arrow.png');
     background-repeat: no-repeat;
-    background-position: right 30px center;
-    background-size: 30px;
+    background-position: right 10px center;
+    background-size: 15px;
+    background-color: #FFF;
 }
 
 .extraAlternatives {
     display: inline-grid;
-    row-gap: 15px;
-    column-gap: 50px;
+    row-gap: 10px;
+    column-gap: 60px;
     align-self: stretch;
     grid-template-rows: repeat(3, fit-content(100%));
     grid-template-columns: repeat(2, fit-content(100%));
@@ -179,15 +181,15 @@ select {
 }
 
 .extraAlternatives input {
-    width: 32px;
-    height: 32px;
+    width: 16px;
+    height: 16px;
     aspect-ratio: 1 / 1;
 }
 
 .extraAlternatives label {
     color: #000;
     font-family: Inter;
-    font-size: 16.914px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -195,8 +197,8 @@ select {
 
 #otherInfo {
     display: flex;
-    height: 210px;
     padding: 10px 20px;
+    height: 150px;
     align-items: flex-start;
     gap: 10px;
     flex-shrink: 0;
@@ -205,7 +207,7 @@ select {
     border: 2px solid #D0D0D0;
     color: #D9D9D9;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -217,50 +219,99 @@ select {
 
 #submit {
     display: flex;
-    width: 495px;
-    height: 53px;
-    padding: 20px;
+    width: 100%;
+    height: 8px;
+    padding: 17px;
     gap: 10px;
     border-radius: 20px;
-    background: #4DBC3A;
+    background: var(--greenButtonColor);
     color: #FFF;
     font-family: Inter;
-    font-size: 27.063px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 0;
     text-align: center;
+    border: none;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#submit:disabled {
+    border: 5px solid #D9D9D9;
+    background: rgba(217, 217, 217, 0.28);
+    color: rgba(0, 0, 0, 0.37);
 }
 
 .mapArea {
     margin-left: 10px;
     max-height: 1020px;
     position: relative;
-    width: 1299px;
-    height: 860px;
+    width: 100%;
+    height: 555px;
+    margin-right: 20px;
 }
 
-.mapArea img {
-    width: 1299px;
-    height: 860px;
+.mapArea .map {
+    width: 100%;
+    height: 100%;
     aspect-ratio: 119/83;
     border-radius: 10px;
     float: none;
     position: absolute;
 }
 
+.taxi {
+    position: absolute;
+    display: none;
+    width: 59px;
+    height: 34px;
+    aspect-ratio: 11/6;
+
+}
+
+.taxi:nth-child(2) {
+    left: 51%;
+    top: 8%;
+    transform: rotate(-18deg);
+}
+
+.taxi:nth-child(3) {
+    left: 27%;
+    top: 33%;
+    transform: rotate(44deg);
+}
+
+.taxi:nth-child(4) {
+    left: 67%;
+    top: 29%;
+}
+
+.taxi:nth-child(5) {
+    left: 75%;
+    top: 17%;
+}
+
+.taxi:nth-child(6) {
+    left: 26%;
+    top: 8%;
+    transform: rotate(-15deg);
+}
+
 .drivers {
     width: 100.1%;
-    border: 2px solid red;
     position: absolute;
     z-index: 10;
     bottom: -3px;
-    height: 50%;
+    height: 55%;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
-    box-shadow: 0 -17px 26px rgba(0, 0, 0, 0.25);
-
-    overflow: auto; /*For scrolling*/
+    box-shadow: 0 -8px 12px -6px rgba(0, 0, 0, 0.25);
+    display: none;
+    overflow: auto;
+    /*For scrolling*/
     scrollbar-width: thin;
 }
 
@@ -268,9 +319,9 @@ select {
 #plus {
     position: absolute;
     z-index: 10;
-    width: 59px;
-    height: 59px;
-    border-radius: 5.59px;
+    width: 39px;
+    height: 39px;
+    border-radius: 3px;
     border: 1px solid #000;
     background: #FFF;
     right: 2%;
@@ -280,23 +331,23 @@ select {
 
     img {
         position: relative;
-        width: 37.267px;
-        height: 37.267px;
+        width: 20px;
+        height: 20px;
     }
 }
 
 #minus {
     position: absolute;
     z-index: 10;
-    width: 59px;
-    height: 59px;
-    border-radius: 5.59px;
+    width: 39px;
+    height: 39px;
+    border-radius: 3px;
     border: 1px solid #000;
     background: #FFF;
     right: 2%;
 
     /* Default: 92%. Move to 42% (Start pos  - .drivers.height)*/
-    top: 92%;
+    top: 91%;
 
     img {
         position: relative;
@@ -310,31 +361,30 @@ select {
 #filter {
     position: absolute;
     z-index: 10;
-    width: 59px;
-    height: 59px;
-    border-radius: 5.59px;
+    width: 39px;
+    height: 39px;
+    border-radius: 3px;
     border: 1px solid #000;
     background: #FFF;
     left: 2%;
-    bottom: 52%;
+    bottom: 57%;
 
     /*Change when displaying search result*/
-    visibility: hidden;
+    display: none;
 
     img {
         position: relative;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 46px;
-        height: 46px;
+        width: 26px;
+        height: 26px;
     }
 }
 
 .resultTable {
     table-layout: fixed;
-    margin: 2%;
+    margin: 2% 2% 1% 2%;
     border-collapse: collapse;
-    /* border: 1px solid black; */
     width: 95%;
     font-style: normal;
     font-weight: 400;
@@ -347,7 +397,7 @@ select {
         text-overflow: ellipsis;
         padding: 2% 0;
         vertical-align: top;
-        font-size: 24px;
+        font-size: 15px;
     }
 
     thead tr {
@@ -358,12 +408,11 @@ select {
     }
 
     thead tr th {
-        font-size: 14px;
+        font-size: 10px;
         font-weight: normal;
         padding-bottom: 2%;
         /* background-color: aqua; */
     }
-
 
     tr :nth-child(2),
     tr :nth-child(3),
@@ -381,11 +430,11 @@ select {
     tr :nth-child(1) {
         width: 5%;
 
-        text-align: left;
+        text-align: center;
 
         img {
-            width: 40px;
-            height: 40px;
+            width: 22px;
+            height: 22px;
             vertical-align: top;
 
             /* padding: 0.5em; */
@@ -395,7 +444,55 @@ select {
     tbody tr:hover {
         border: 3px solid #D9D9D9;
         border-radius: 20px;
+        cursor: pointer;
         /*Why??*/
     }
 
 }
+
+.bookingButtons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 2px;
+}
+
+#cancel {
+    display: flex;
+    height: 8px;
+    padding: 17px 35px;
+    border-radius: 15px;
+    background: rgb(203, 0, 0);
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    margin-bottom: 11px;
+    border: none;
+
+}
+
+#confirm {
+    display: flex;
+    height: 8px;
+    padding: 17px 35px;
+    border-radius: 15px;
+    background: var(--greenButtonColor);
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 11px;
+    border: none;
+}
+
+
+
+
+.bookingConfirmation {}
