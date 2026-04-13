@@ -8,7 +8,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 body {
@@ -298,14 +297,13 @@ select {
     width: 100.1%;
     position: absolute;
     z-index: 10;
-    bottom: -3px;
-    height: 55%;
+    bottom: 4.5em;
+    height: 45%;
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     box-shadow: 0 -8px 12px -6px rgba(0, 0, 0, 0.25);
     display: none;
     overflow: auto;
-    /*For scrolling*/
     scrollbar-width: thin;
 }
 
@@ -319,8 +317,6 @@ select {
     border: 1.5px solid #000;
     background: #FFF;
     right: 1.5%;
-
-    /*Default 83%. Move to 33% (Start pos  - .drivers.height)*/
     top: 83%;
 
     img {
@@ -339,8 +335,6 @@ select {
     border: 1.5px solid #000;
     background: #FFF;
     right: 1.5%;
-
-    /* Default: 92%. Move to 42% (Start pos  - .drivers.height)*/
     top: 91%;
 
     img {
@@ -362,8 +356,6 @@ select {
     background: #FFF;
     left: 2%;
     bottom: 57%;
-
-    /*Change when displaying search result*/
     display: none;
 
     img {
@@ -389,9 +381,9 @@ select {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        padding: 2% 0;
+        padding: 0.75em 0;
         vertical-align: top;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     thead tr {
@@ -402,10 +394,9 @@ select {
     }
 
     thead tr th {
-        font-size: 10px;
+        font-size: 1em;
         font-weight: normal;
         padding-bottom: 2%;
-        /* background-color: aqua; */
     }
 
     tr :nth-child(2),
@@ -427,11 +418,9 @@ select {
         text-align: center;
 
         img {
-            width: 22px;
-            height: 22px;
+            width: 1.3em;
+            height: 1.3em;
             vertical-align: top;
-
-            /* padding: 0.5em; */
         }
     }
 
@@ -439,51 +428,51 @@ select {
         border: 3px solid #D9D9D9;
         border-radius: 20px;
         cursor: pointer;
-        /*Why??*/
     }
 
 }
 
 .bookingButtons {
-    display: flex;
+    display: none;
     justify-content: space-between;
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-bottom: 2px;
+    padding: 40px 22px 2px 22px;
+    z-index: 2;
+    background-color: #fff;
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    align-items: flex-end;
+    box-shadow: 0 -8px 12px -6px rgba(0, 0, 0, 0.25);
 }
 
 #cancel {
     display: flex;
-    height: 8px;
-    padding: 17px 35px;
+    padding: 0.6em 3em;
     border-radius: 15px;
     background: rgb(203, 0, 0);
     color: #FFF;
     font-family: Inter;
-    font-size: 15px;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 400;
     align-items: center;
-    margin-bottom: 11px;
     border: none;
-
+    margin-left: 30px;
 }
 
 #confirm {
     display: flex;
-    height: 8px;
-    padding: 17px 35px;
+    padding: 0.6em 3em;
     border-radius: 15px;
     background: var(--greenButtonColor);
     color: #FFF;
     font-family: Inter;
-    font-size: 15px;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 400;
-    text-align: center;
     align-items: center;
-    margin-bottom: 11px;
     border: none;
+    margin-right: 20px;
 }
 
 .bookingConfirmation {

@@ -22,10 +22,12 @@ function loadResults(e) {
     const plusBtn = document.getElementById('plus');
     const minusBtn = document.getElementById('minus');
     const filterBtn = document.getElementById('filter');
+    const bookingButtons = document.getElementById('bookingButtons');
 
     plusBtn.style.top = '29%';
     minusBtn.style.top = '37%';
     filterBtn.style.display = 'block';
+    bookingButtons.style.display = 'flex';
 }
 
 function cancelBooking(e) {
@@ -39,10 +41,12 @@ function cancelBooking(e) {
     const plusBtn = document.getElementById('plus');
     const minusBtn = document.getElementById('minus');
     const filterBtn = document.getElementById('filter');
+    const bookingButtons = document.getElementById('bookingButtons');
 
     plusBtn.style.top = '83%';
     minusBtn.style.top = '92%';
     filterBtn.style.display = 'none';
+    bookingButtons.style.display = 'none';
 }
 
 function confirmBooking(e) {
