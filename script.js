@@ -21,8 +21,8 @@ function loadResults(e) {
     const minusBtn = document.getElementById('minus');
     const filterBtn = document.getElementById('filter');
 
-    plusBtn.style.top = '27%';
-    minusBtn.style.top = '36%';
+    plusBtn.style.top = '29%';
+    minusBtn.style.top = '37%';
     filterBtn.style.display = 'block';
 }
 
